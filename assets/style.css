@@ -1,0 +1,50 @@
+/* styles.css
+   Comentários explicativos por todo o arquivo.
+   Paleta pensada para calma e acolhimento.
+*/
+
+/* reset/ajuste leve */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #F6F9FB; /* fundo suave */
+  color: #4B5563; /* texto escuro suave */
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(90deg, rgba(109,174,219,0.12), rgba(167,215,197,0.06));
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Botões primários */
+.btn-primary {
+  background-color: #6DAEDB;
+  border-color: #6DAEDB;
+}
+.btn-primary:hover {
+  background-color: #5b9ec4;
+  border-color: #5b9ec4;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+}
+
+/* Pequeno ajuste para imagens circulares */
+img.rounded-circle {
+  object-fit: cover;
+}
+
+/* Footer contraste leve */
+footer {
+  background: linear-gradient(180deg,#6DAEDB 0%, #A7D7C5 100%);
+}
+
+/* Responsividade / espaçamentos extras */
+@media (max-width: 767px) {
+  .hero { padding-top: 2rem; padding-bottom: 2rem; }
+}
+
