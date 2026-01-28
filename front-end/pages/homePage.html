@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>MedUniversity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+ <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-emerald-100 transition-all duration-300">
+  <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3 group cursor-pointer">
+      <div class="w-12 h-12 bg-emerald-800 rounded-lg flex items-center justify-center text-white font-serif text-2xl group-hover:bg-emerald-600 transition-colors">M</div>
+      <span class="text-2xl font-bold tracking-tighter text-emerald-900 uppercase">Med<span class="text-emerald-700 font-light">University</span></span>
+    </div>
+    
+    <div class="hidden lg:flex items-center gap-10">
+      <nav class="flex gap-8 text-sm font-semibold text-slate-700 uppercase tracking-widest">
+        <a href="#faculdade" class="hover:text-emerald-600 transition">A Faculdade</a>
+        <a href="#noticias" class="hover:text-emerald-600 transition">Notícias</a>
+        <a href="#portal" class="hover:text-emerald-600 transition text-emerald-700">Portal do Aluno</a>
+      </nav>
+      <a href="login.html"><button class="bg-emerald-800 text-white px-8 py-3 rounded-md font-bold hover:bg-emerald-700 transition-all transform hover:-translate-y-1 shadow-lg shadow-emerald-900/20">
+      LOGIN
+      </button></a>
+    </div>
+  </div>
+</nav>
+
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover scale-105 animate-slow-zoom">
+    <div class="absolute inset-0 bg-emerald-950/60"></div>
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10 text-center text-white">
+    <h2 class="text-emerald-400 font-bold uppercase tracking-[0.3em] mb-4 text-sm md:text-base">Liderança em Ciência e Saúde</h2>
+    <h1 class="text-5xl md:text-8xl font-serif mb-8 leading-tight">Moldando o futuro da <br> <span class="italic">Medicina Moderna</span></h1>
+    <div class="flex flex-col md:flex-row gap-6 justify-center">
+      <button class="bg-white text-emerald-900 px-10 py-4 rounded-md font-bold hover:bg-emerald-50 transition-all text-lg">Conheça o Campus</button>
+      <button class="border-2 border-white text-white px-10 py-4 rounded-md font-bold hover:bg-white/10 transition-all text-lg">Mensalidade</button>
+    </div>
+  </div>
+</section>
+
+<section class="bg-emerald-900 py-12">
+  <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center text-white">
+    <div class="p-6">
+      <div class="text-4xl font-bold mb-2">#1</div>
+      <div class="text-emerald-300 uppercase text-xs tracking-widest font-bold">Ranking Nacional</div>
+    </div>
+    <div class="p-6 border-x border-emerald-800">
+      <div class="text-4xl font-bold mb-2">98%</div>
+      <div class="text-emerald-300 uppercase text-xs tracking-widest font-bold">Empregabilidade</div>
+    </div>
+    <div class="p-6">
+      <div class="text-4xl font-bold mb-2">15+</div>
+      <div class="text-emerald-300 uppercase text-xs tracking-widest font-bold">Hospitais Conveniados</div>
+    </div>
+  </div>
+</section>
+
+<section id="noticias" class="py-24 bg-slate-50">
+  <div class="container mx-auto px-6">
+    <div class="flex items-center justify-between mb-16">
+      <h2 class="text-3xl font-serif text-slate-900">Destaques e Pesquisa 🔬</h2>
+      <a href="#" class="text-emerald-700 font-bold border-b-2 border-emerald-700 pb-1">Ver tudo</a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="group cursor-pointer">
+        <div class="relative h-64 overflow-hidden rounded-xl mb-6 shadow-xl">
+          <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+          <div class="absolute top-4 left-4 bg-emerald-700 text-white text-[10px] px-3 py-1 font-bold uppercase">Pesquisa</div>
+        </div>
+        <h3 class="text-xl font-bold text-slate-800 group-hover:text-emerald-700 transition">Avanço no tratamento de regeneração celular</h3>
+        <p class="text-slate-500 mt-3 text-sm leading-relaxed">Pesquisadores do nosso campus de oncologia publicam estudo inovador na revista Nature...</p>
+      </div>
+      </div>
+  </div>
+</section>
+</body>
+</html>
